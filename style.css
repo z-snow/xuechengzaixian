@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 清除浮动 伪元素清除浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+}
+body {
+    color: #f3f5f7;
+    height: 3000px;
+}
+/* --版心-- */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+/* --header头部开始-- */
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+/* logo */
+.logo {
+    float: left;
+    margin-right: 70px;
+}
+/* nav */
+/* .nav ul {
+    float: left;
+} */
+/* .nav ul li {
+    float: left;
+    height: 42px;
+    line-height: 42px; 
+} */
+.nav ul li a {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px; 
+    padding: 0 10px;
+    margin-right: 26px;
+    font-size: 18px;
+    color: #050505;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+/* search */
+.search input {
+    float: left;
+    padding-left: 20px;
+    width: 340px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 14px;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background: url(images/button_bg.jpg) repeat;
+    cursor: pointer;
+}
+/* user */
+.user {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    color: #666;
+    font-size: 14px;
+}
+.user img {
+    margin: 0 20px 0 40px;
+    vertical-align: middle;
+}
+
+/* banner部分 */
+.banner {
+    height: 420px;
+    background: #1c036c url(images/banner_bg.jpg) no-repeat center top;  
+}
+/* 左边banner部分 */
+.banner .banner1 {
+    height: 420px;
+    position: relative;
+}
+.banner .subnav {
+    position: relative;
+    float: left;
+    padding: 0 20px;
+    width: 150px;
+    height: 420px;
+    background-color: red;
+    background-color: rgba(0, 0, 0, .3)
+}
+.banner .subnav li {
+    height: 45px;
+    line-height: 45px;
+}
+.banner .banner1 .subnav a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.banner .banner1 .subnav a:hover {
+    color: #00b4ff;
+}
+.banner .subnav li a span {
+    float: right;
+}
+/* 左边banner开始 */
+/* 右边course课表部分 */
+.banner .course {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+.banner .course h2 {
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background-color: #9bceea;
+    text-align: center;
+}
+.banner .course li {
+    height: 50px;
+    margin: 5px 18px 5px;
+    border-bottom: 1px solid #efefef;
+}
+.course li a {
+    text-decoration: none;
+}
+.course li a h4 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.course li a p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.course .all a {
+    display: block;
+    margin: 0 auto;
+    width: 198px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #22b0ff;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+}
+/* 右边小课表结束 */
+/* banner 中的轮播图开始 */
+.banner .lunbo {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    margin-left: -80px;
+    width: 160px;
+    height: 14px;
+    /* background-color: pink; */
+}
+.banner .lunbo li {
+    float: left;
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    background-color:rgba(255, 255, 255, .3);
+    border-radius: 50%;
+}
+.banner .lunbo .current {
+    background-color: #fff;
+    width: 20px;
+    height: 14px;
+    border-radius: 10px;
+}
+/* banner 中的轮播图结束 */
+/* navbar开始 */
+.navbar {
+    margin-top: 10px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgb(0,0,0,.1);
+}
+.navbar ul li {
+    float: left;
+    padding: 20px 0; 
+}
+.navbar li .jingping {
+    color: #6bbfff;
+    font-weight: 700;
+    border: none;
+}
+.navbar li a {
+    padding: 0 36px;
+    border-left: 1px solid #bdbfc1;
+}
+.navbar .intersting {
+    float: right;
+    margin-right: 26px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+/* navbar结束 */
+/* 精品推荐开始 */
+.box {
+    margin-top: 15px;
+}
+.box-hd {
+    height: 60px;
+    line-height: 60px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+
+}
+.box-hd a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.box-bd {
+    width: 1215px;
+}
+.box-bd li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box-bd li:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+.box-bd li .one {
+    position: absolute;
+    top: -1px;
+    right: -3px;
+    width: 30px;
+}
+.box-bd li .two {
+    position: absolute;
+    right: -3px;
+    top: -1px;
+    width: 30px;
+}
+.box-bd li img {
+    width: 228px;
+}
+.box-bd li h4 {
+    margin: 20px 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+.box-bd li p {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd li p span {
+    color: #ff7c2d;
+}
+/* 精品推荐结束 */
+/* 编程入门star */
+.pro_entry {
+    height: 79px;
+}
+.pro_entry h3 {
+    float: left;
+    margin-right: 315px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+}
+.pro_entry li {
+    float: left;
+}
+.pro_entry li a {
+    padding: 0 35px;
+    font-size: 16px;
+    color: #868686;
+}
+.pro_entry a:first-child {
+    color: #00a4ff;
+}
+/* 编程入门end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer部分开始 */
+.footer {
+    height: 420px;
+    background-color: #fff;
+}
+.f-w {
+    /* width: 1200px; */
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 390px;
+}
+.footer .f-l {
+    float: left;
+    width: 450px;
+}
+.footer .f-l p {
+    margin: 20px 0;
+    font-size: 12px;
+    color: #666;
+}
+.footer .f-app {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+}
+.footer .f-app a {
+    font-size: 16px;
+    color: #00a4ff;
+}
+.footer .f-r {
+    float: right;
+}
+.footer .dl1 {
+    float: left;
+    width: 230px;
+}
+.footer .dl2 {
+    float: left;
+    width: 210px;
+}
+.footer .dl3 {
+    float: right;
+    width: 95px;
+}
+.footer dt {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333;
+}
+.footer a {
+    font-size: 12px;
+    color: #333;
+}
+.footer a:hover {
+    color: #00a4ff;
+}
+/* footer部分结束 */
+/* sidebar开始 */
+.sidebar {
+    position: fixed;
+    top: 100px;
+    z-index: 222;
+    left: 50%;
+    margin-left: -800px;
+    padding: 25px;
+    width: 135px;
+    height: 375px;
+    background-color: rgba(255 ,255 , 255 , .2);
+}
+.sidebar ul li {
+    height: 35px;
+    line-height: 35px;
+}
+.sidebar li a {
+    font-size: 14px;
+    color: #000;
+}
+.sidebar li a:hover {
+    color: #00a4ff;
+}
+/* sidebar结束 */
+
