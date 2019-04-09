@@ -1,0 +1,199 @@
+body {
+    width: 100%;
+    /* 给body设置最大宽度和最小宽度 */
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666; 
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+input {
+    -webkit-appearance: none;
+}
+/*禁用长按页面时的弹出菜单*/
+img,
+a {
+    -webkit-touch-callout: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+img {
+    vertical-align: middle;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+/* header */
+.app {
+    height: 45px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    float: left;
+    height: 45px;
+    color: #fff;
+    background-color: #333;
+    line-height: 45px;
+    text-align: center;
+    
+}
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+.app ul li:nth-child(2) img {
+    width: 30px;
+}
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+/* search */
+.search-wrap {
+    position: fixed;
+    /* 这里的overflow: hidden是用来解决里面子盒子加外边距的问题，但是最后给加上固定定位，则可以省略 */
+    /* overflow: hidden; */
+    height: 44px;
+    width: 100%;
+    /* 注意：这里的input框会根据屏幕的缩放而缩放，所以需要加上最大最小宽度 */
+    max-width: 640px;
+    min-width: 320px;
+}
+/* 两边的按钮和登录用绝对定位，然后给中间的search盒子加上左右margin，就能使中间盒子随父亲缩放 */
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    width: 50px;
+    background: url(../images/s-btn.png) no-repeat  center center;
+    background-size: 20px 18px;
+}
+.search-login {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 44px;
+    width: 40px;
+    color: #fff;
+    line-height: 44px;
+    text-align: center;
+}
+.search {
+    position: relative;
+    height: 30px;
+    margin: 7px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.jd-icon {
+    position: absolute;
+    top: 7px;
+    left: 13px;
+    width: 20px;
+    height: 15px;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 20px 15px;
+}
+/* 小竖线的做法很多，这里是用伪元素做的，还可以加上i span border 都可以实现 */
+.jd-icon::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+.sou {
+    position: absolute;
+    top: 7px;
+    left: 54px;
+    width: 17px;
+    height: 15px;
+    /* 这里的是二倍精灵图，需要将精灵图等比缩小一半，再切图片的位置 */
+    background: url(../images/jd-sprites.png) no-repeat -83px 0;
+    /* 下面改变背景图片的大小是整个精灵图的大小，只写宽度，高度用auto 即可 */
+    background-size: 200px auto;
+}
+.search-con {
+    position: absolute;
+    top: 6px;
+    left: 76px;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+/* 轮播图 */
+.selider img {
+    width: 100%;
+}
+/* 小家电 */
+.brand {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+/* 每个图片都是先调整好盒子的大小，用百分比表示，然后图片的宽度是百分比百 */
+.brand div {
+    float: left;
+    width: 33.33%;
+}
+.brand div img {
+    width: 100%;
+}
+/* 导航栏 */
+nav {
+    padding-top: 10px;
+}
+nav a {
+    float: left;
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+}
+nav img {
+    width: 40px;
+    margin: 10px 0;
+}
+/* news */
+.news a {
+    float: left;
+}
+.news a img {
+    width: 100%;
+}
+.news a:first-child {
+    width: 50%;
+}
+/* 此处用公式，n+2不能写成2+n */
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #666;
+    box-sizing: border-box;
+}
