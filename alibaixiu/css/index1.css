@@ -1,0 +1,153 @@
+/* 根据设计稿container的最大宽度为1280 */
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+}
+header {
+    padding-left: 0!important;
+}
+.logo {
+    background-color:  #429ad9;
+}
+.logo a img {
+    /* 图片不给宽度，加上max-width，图片放大时最大只能放大到自身的100% 可以随父亲缩小而缩小，*/
+    /* width: 100%; */
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+.logo span {
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+.nav {
+    border-bottom: 1px solid #ccc;
+}
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    background-color: #eee;
+    font-size: 16px;
+}
+.nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+.nav a::before {
+    padding-right: 5px;
+}
+/* 当进入小屏和超小屏时，nav里面的li浮动，而且占20% */
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+}
+/* 当进入超小屏时，li里面的文字为14px*/
+@media screen and (max-width: 767px) {
+    .nav li a {
+        font-size: 14px;
+    }
+    article {
+        margin-top: 10px;
+    }
+    article .news ul li:nth-child(1) {
+        width: 100%;
+    }
+    article .news ul li {
+        width: 50%;
+    }
+    .publish h3 {
+        font-size: 14px;
+    }
+}
+/* 中间 */
+.news li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+    padding-bottom: 0;
+}
+.news li:nth-child(1) p {
+    height: 41px;
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.news li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.news li a img {
+    width: 100%;
+    height: 100%;
+}
+.news li a p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, .5);
+    padding: 3px 10px 0;
+}
+.publish {
+    border-top: 1px solid #ccc;
+}
+.publish .row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.pic {
+    margin-top: 10px;
+}
+.pic img {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+.hot {
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.hot span {
+    border-radius: 0;
+    margin: 0 0 20px;
+}
+.hot span {
+    font-size: 12px;
+}

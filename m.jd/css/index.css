@@ -80,6 +80,7 @@ ul li {
     /* 这里的overflow: hidden是用来解决里面子盒子加外边距的问题，但是最后给加上固定定位，则可以省略 */
     /* overflow: hidden; */
     height: 44px;
+    /* 固定定位通栏必须加上宽度百分之百 */
     width: 100%;
     /* 注意：这里的input框会根据屏幕的缩放而缩放，所以需要加上最大最小宽度 */
     max-width: 640px;

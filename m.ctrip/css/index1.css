@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #222;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* 头部 */
+header {
+    display: flex;
+    /* 头部盒子是固定定位，必须加上宽度百分之百 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.search {
+    position: relative;
+    flex: 1;
+    height: 26px;
+    color: #666;
+    margin: 7px 10px;
+    padding-left: 25px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 24px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.search::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -60px -280px;
+    background-size: 104px;
+}
+.user a {
+    width: 40px;
+    height: 44px;
+    text-align: center;
+    color: red;
+}
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 2px 0 0 2px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+}
+/* 焦点图 */
+.focus {
+    margin-top: 45px;
+}
+.focus img {
+    width: 100%;
+}
+/* 快捷导航部分 */
+.local-nav {  
+    height: 64px;
+    margin: 0 4px;
+    border-radius: 8px;
+}
+.local-nav ul {
+    display: flex;
+}
+.local-nav li {
+    flex: 1;
+}
+.local-nav li a {
+    text-align: center;
+}
+.local-nav a span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 4px 0 -6px 20px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px;
+}
+.local-nav a .local-nav-icon2 {
+    background-position: 0 -32px;
+}
+.local-nav a .local-nav-icon3 {
+    background-position: 0 -64px;
+}
+.local-nav a .local-nav-icon4 {
+    background-position: 0 -96px;
+}
+.local-nav a .local-nav-icon5 {
+    background-position: 0 -128px;
+}
+/* nav */
+nav {
+    border-radius: 8px;
+    background-color: pink;
+}
+.nav-common {
+    height: 88px;
+    background-color: purple;
+}

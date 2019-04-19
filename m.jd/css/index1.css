@@ -45,6 +45,7 @@ header ul li {
 .search {
     position: fixed;
     height: 44px;
+    /* 固定定位必须加上宽度百分之百 */
     width: 100%;
     max-width: 640px;
     min-width: 320px;
